@@ -1,0 +1,22 @@
+<div id="mainHeader"
+    class=" row bg-white vw-100 border-0 border-bottom d-flex align-items-center justify-content-center"
+    style="height: 10vh;">
+    <div
+        class="col-11 col-md-12 border-0 d-flex h-100  d-flex align-items-center justify-content-between justify-content-md-evenly">
+        <div class="col-1 col-md-2  d-md-flex align-items-center justify-content-start justify-content-md-center ">
+            <h3>Logo</h3>
+        </div>
+        <div class="col-6 d-none  d-md-flex align-items-center justify-content-evenly  ">
+            <li class="list-unstyled" *ngFor="let link of navItems">
+                <a class="text-decoration-none text-black header-font-size" (click)="scrollTo(link)">{{
+                    link }}</a>
+            </li>
+        </div>
+        <div class="col-9 col-md-3  d-flex align-items-center justify-content-end justify-content-md-evenly  ">
+            <a href="" class="text-black text-decoration-none header-font-size me-2 me-md-0"><i
+                    class="fa fa-phone text-black" aria-hidden="true"></i>
+                +91 98765 09678</a>
+            <button class="btn header-btn header-font-size"> Enquire Now</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+.landing-text-under {
+    text-decoration: underline;
+    text-decoration-color: rgba(128, 128, 128, 0.363);
+    text-decoration-thickness: 8px;
+    text-underline-offset: 4px;
+    border-radius: 20px;
+}
+
+.landingFS {
+    font-size: 10vmin;
+    font-weight: bold;
+}
+
+.btn-bg {
+    background: var(--main-color);
+    color: white;
+}
+
+.btn-bg-border {
+    border: 1px solid var(--main-color);
+
+}
+
+.landBoxAnime {
+    animation: moveUpward 5s infinite linear;
+    transition: 0.9s all;
+}
+
+.landBoxAnime2 {
+    animation: moveUpward 3s infinite linear;
+    transition: 0.9s all;
+}
+
+@keyframes moveUpward {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
