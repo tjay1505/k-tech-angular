@@ -35,3 +35,12 @@ body {
 .main-bg-dark {
     background: var(--main-color);
 }
+
+.btn-bg-border {
+    border: 1px solid var(--main-color);
+}
+
+.hoverCard:hover {
+    transition: 0.2s all;
+    transform: scale(105%);
+}

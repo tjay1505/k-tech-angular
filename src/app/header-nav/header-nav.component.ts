@@ -11,6 +11,9 @@ export class HeaderNavComponent {
   navItems = ['Home', 'About', 'Courses', 'Categories', 'Testimonials', 'Events', 'Contact']
 
   scrollTo(item: any) {
-
+    let el = document.getElementById(item)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
   }
 }
