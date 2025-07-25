@@ -17,6 +17,7 @@ body {
 :root {
     --font-landing: 13px;
     --main-bg-light: rgba(219, 166, 255, 0.13);
+    --main-bg-light-btn: rgb(205, 130, 255);
     --main-color: rgb(115, 0, 138);
 }
 
@@ -38,6 +39,15 @@ body {
 
 .btn-bg-border {
     border: 1px solid var(--main-color);
+}
+
+.btn-bg-main {
+    background: var(--main-color);
+}
+
+.btn-bg-main:hover {
+    border: 1px solid var(--main-color);
+    background: var(--main-bg-light-btn);
 }
 
 .hoverCard:hover {

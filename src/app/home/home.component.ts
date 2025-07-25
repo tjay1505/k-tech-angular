@@ -4,6 +4,7 @@ import { SharedModule } from '../modules/shared/shared.module';
 import { LandingComponent } from "../landing/landing.component";
 import { AboutComponent } from "../about/about.component";
 import { AcademyComponent } from "../academy/academy.component";
+import { LearningPathComponent } from "../learning-path/learning-path.component";
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,8 @@ import { AcademyComponent } from "../academy/academy.component";
     SharedModule,
     LandingComponent,
     AboutComponent,
-    AcademyComponent
+    AcademyComponent,
+    LearningPathComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
