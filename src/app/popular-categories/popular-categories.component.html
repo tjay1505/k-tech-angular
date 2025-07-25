@@ -1,0 +1,51 @@
+<div class="vw-100 border=0 d-flex flex-column align-items-center gap-3 py-4" id="About">
+    <div class="col-12 d-flex  align-items-center justify-content-center ">
+        <button class="btn btn-bg-border font-color font-size">Course Categories</button>
+    </div>
+    <div class="col-12 d-flex gap-2 flex-column align-items-center justify-content-center ">
+        <h2 class="fw-bold fs-1 text-center">Most Popular Categories in<span class="font-color">Our Courses</span></h2>
+        <p class="col-10 col-md-5 text-center fs-6 fw-light">Explore our comprehensive range of industry-focused courses
+            designed to make you job-ready with the latest skills and technologies.</p>
+    </div>
+    <div
+        class="d-flex flex-column flex-wrap gap-3 gap-md-4 flex-md-row col-11 col-md-11 mt-2 align-items-center justify-content-center ">
+
+        <div *ngFor="let item of popularCatAry" style="min-height: 95vh;"
+            [ngStyle]="{'border-top': '5px solid ' + item.borderClr}"
+            class="col-10 mb-4 mb-md-0 col-md-3 font-size shadow d-flex flex-column align-items-center justify-content-evenly rounded-4 py-3 py-md-3">
+            <div class="col-11">
+                <span [ngStyle]="{'background':item.iconbg}" class=" p-3 text-black rounded-2 my-3 ">
+                    <i class="fa fa-trophy font-color" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="col-11">
+                <h1 class="fs-4">{{item.tittle}}</h1>
+                <p class="fw-bold fs-4 font-color">{{item.fee}} <span class="font-size text-black"><i
+                            class="fa fa-clock-o" aria-hidden="true"></i>{{item.duration}}</span> </p>
+            </div>
+            <div class="col-11 d-flex justify-content-between align-items-center">
+                <p> <i class="fa fa-trophy" aria-hidden="true"></i> Popular Modules</p>
+            </div>
+
+            <div class="col-10 h-50">
+                <ul class="points-grid-popular  m-0 p-0  border overflow-y-scroll">
+                    <li *ngFor="let points of item.modules">{{ points }}</li>
+                </ul>
+            </div>
+            <div class="col-11">
+                <div class="col-12 d-flex flex-column justify-content-between align-items-start">
+                    <span class="mb-2">🔥 Trending</span>
+                    <div>
+                        <span class="text-danger bg-danger-subtle me-2 p-1 rounded-2"
+                            *ngFor="let chip of item.tip">{{chip}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn bg-success-subtle text-white col-11 my-2 font-size"
+                *ngIf="item.newBtn">{{item.newBtn}}</button>
+            <button class="btn btn-bg-main text-white col-11">Enroll Now</button>
+
+        </div>
+    </div>
+</div>
