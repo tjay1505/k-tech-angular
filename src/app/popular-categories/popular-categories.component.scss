@@ -4,3 +4,30 @@
     grid-auto-rows: auto;
     gap: 10px;
 }
+
+
+.scroll-box {
+    //   width: 300px;
+    //   height: 200px;
+    //   overflow: auto;
+}
+
+/* WebKit */
+.scroll-box::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+/* Firefox */
+.scroll-box {
+    scrollbar-color: var(--main-color) #ffffff00;
+    scrollbar-width: thin;
+}

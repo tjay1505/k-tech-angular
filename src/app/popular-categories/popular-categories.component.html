@@ -10,28 +10,26 @@
     <div
         class="d-flex flex-column flex-wrap gap-3 gap-md-4 flex-md-row col-11 col-md-11 mt-2 align-items-center justify-content-center ">
 
-        <div *ngFor="let item of popularCatAry" style="min-height: 95vh;"
+        <div *ngFor="let item of popularCatAry" style="height:85vh;"
             [ngStyle]="{'border-top': '5px solid ' + item.borderClr}"
             class="col-10 mb-4 mb-md-0 col-md-3 font-size shadow d-flex flex-column align-items-center justify-content-evenly rounded-4 py-3 py-md-3">
-            <div class="col-11">
+            <div class="col-11 my-2 ">
                 <span [ngStyle]="{'background':item.iconbg}" class=" p-3 text-black rounded-2 my-3 ">
-                    <i class="fa fa-trophy font-color" aria-hidden="true"></i>
+                    <i [ngClass]="item.icons" class="font-color" aria-hidden="true"></i>
                 </span>
             </div>
             <div class="col-11">
-                <h1 class="fs-4">{{item.tittle}}</h1>
+                <h1 class="fs-5 mt-2">{{item.tittle}}</h1>
                 <p class="fw-bold fs-4 font-color">{{item.fee}} <span class="font-size text-black"><i
-                            class="fa fa-clock-o" aria-hidden="true"></i>{{item.duration}}</span> </p>
+                            class="fa-solid fa-clock me-1"></i>{{item.duration}}</span> </p>
             </div>
             <div class="col-11 d-flex justify-content-between align-items-center">
-                <p> <i class="fa fa-trophy" aria-hidden="true"></i> Popular Modules</p>
+                <p> <i class="fa-solid fa-award"></i> Popular Modules</p>
             </div>
 
-            <div class="col-10 h-50">
-                <ul class="points-grid-popular  m-0 p-0  border overflow-y-scroll">
-                    <li *ngFor="let points of item.modules">{{ points }}</li>
-                </ul>
-            </div>
+            <ul style="height: 25vh;" class="col-10 points-grid-popular  m-0 p-0  scroll-box overflow-y-scroll">
+                <li *ngFor="let points of item.modules">{{ points }}</li>
+            </ul>
             <div class="col-11">
                 <div class="col-12 d-flex flex-column justify-content-between align-items-start">
                     <span class="mb-2">🔥 Trending</span>

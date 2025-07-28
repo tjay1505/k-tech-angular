@@ -23,7 +23,8 @@ export class PopularCategoriesComponent {
       newBtn: null,
       tip: ['AI UI Tools', 'Voice Interface Design (VUI)'],
       borderClr: 'rgba(255, 68, 199, 1)',
-      iconbg: 'rgba(255, 205, 251, 0.45)'
+      iconbg: 'rgba(255, 205, 251, 0.45)',
+      icons: ['fa-solid', 'fa-palette']
     },
     {
       tittle: 'Digital Marketing',
@@ -39,8 +40,9 @@ export class PopularCategoriesComponent {
       ],
       newBtn: null,
       tip: ['AI-Powered Reels & Short-form Videos'],
-      borderClr: 'rgba(255, 68, 199, 1)',
-      iconbg: 'rgba(255, 205, 251, 0.45)'
+      borderClr: 'rgba(49, 162, 255, 1)',
+      iconbg: 'rgba(205, 235, 255, 0.34)',
+      icons: ['fa-solid', 'fa-arrow-up-right-dots']
     },
     {
       tittle: 'Java Fullstack Development',
@@ -56,8 +58,9 @@ export class PopularCategoriesComponent {
       ],
       newBtn: '🔥 Bonus: Microservices + Docker',
       tip: ['Microservices + Docker (Intro)'],
-      borderClr: 'rgba(255, 68, 199, 1)',
-      iconbg: 'rgba(255, 205, 251, 0.45)'
+      borderClr: 'rgba(32, 167, 28, 1)',
+      iconbg: 'rgba(94, 255, 88, 0.29)',
+      icons: ['fa-solid', 'fa-code']
     },
     {
       tittle: 'Video Editing Masterclass',
@@ -72,8 +75,9 @@ export class PopularCategoriesComponent {
       ],
       newBtn: '🎬 Projects: Short Films, Reels, Event Edits',
       tip: ['Short Films, Reels, Event Edits'],
-      borderClr: 'rgba(255, 68, 199, 1)',
-      iconbg: 'rgba(255, 205, 251, 0.45)'
+      borderClr: 'rgba(240, 108, 0, 1)',
+      iconbg: 'rgba(255, 102, 0, 0.26)',
+      icons: ['fa-solid', 'fa-video']
     },
     {
       tittle: 'Generative AI Course',
@@ -88,8 +92,10 @@ export class PopularCategoriesComponent {
       ],
       newBtn: null,
       tip: ['Short Films, Reels, Event Edits'],
-      borderClr: 'rgba(255, 68, 199, 1)',
-      iconbg: 'rgba(255, 205, 251, 0.45)'
+      borderClr: 'rgba(0, 196, 196, 1)',
+      iconbg: 'rgba(0, 171, 214, 0.27)',
+      icons: ['fa-solid', 'fa-brain']
+
     },
     {
       tittle: 'Prompt Engineering Course',
@@ -105,8 +111,9 @@ export class PopularCategoriesComponent {
       ],
       newBtn: '🧠 Future Skill: Multi-modal AI Prompting',
       tip: ['Multi-modal AI Prompting'],
-      borderClr: 'rgba(255, 68, 199, 1)',
-      iconbg: 'rgba(255, 205, 251, 0.45)'
+      borderClr: 'rgba(204, 0, 255, 1)',
+      iconbg: 'rgba(255, 0, 234, 0.19)',
+      icons: ['fa-solid', 'fa-lightbulb']
     },
   ]
 }
