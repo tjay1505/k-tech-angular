@@ -1,3 +1,8 @@
 p {
-    margin-bottom: 0;
+  margin-bottom: 0;
+}
+
+.gridClass {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
