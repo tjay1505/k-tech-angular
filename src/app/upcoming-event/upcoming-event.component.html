@@ -1,0 +1,28 @@
+<div class="vw-100 border=0 d-flex flex-column align-items-center gap-3 py-4" id="upcomingEvent">
+    <div class="col-12 d-flex  align-items-center justify-content-center ">
+        <button class="btn btn-bg-border font-color font-size">Upcoming Events</button>
+    </div>
+    <div class="col-12 d-flex gap-2 flex-column align-items-center justify-content-center ">
+        <h2 class="fw-bold fs-1 text-center">Join Our <span class="font-color">Bootcamps & Webinars</span></h2>
+        <p class="col-10 col-md-5 text-center fs-6 fw-light">Accelerate your learning with intensive bootcamps and gain
+            insights from industry experts through our exclusive webinar series.</p>
+    </div>
+    <div class="col-12 d-flex align-items-center justify-content-evenly">
+        <div class="col-md-3 shadow d-flex flex-column rounded-3 "
+            [ngStyle]="{'border-top': '5px solid ' + item.borderClr}" style="height: 60vh;"
+            *ngFor="let item of upComeEvent">
+            <div class="col-11">
+                <p class="fw-bold fs-5">{{item.tittle}}</p>
+                <p class="font-color">{{item.subtitle}}</p>
+                <p class="font-size text-muted">{{item.text}}</p>
+            </div>
+            <div class="col-11 d-flex align-items-center justify-content-evenly">
+                <div class="col-8">
+                    <p *ngFor="let i of item.sed"><i class="fa fa-calendar"></i>{{i}}</p>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-center"> <span
+                        class="badge bg-light-subtle"> {{item.type}} </span> </div>
+            </div>
+        </div>
+    </div>
+</div>
