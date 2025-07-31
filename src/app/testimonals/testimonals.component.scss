@@ -25,6 +25,12 @@
   // max-width: 100%;
 }
 
+// @media (max-width: 432px) {
+//   ::ng-deep .p-carousel-item > * {
+//     width: 30%;
+//     // max-width: 100%;
+//   }
+// }
 @media (max-width: 425px) {
   ::ng-deep .p-carousel-item > * {
     width: 40%;

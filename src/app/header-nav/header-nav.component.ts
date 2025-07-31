@@ -5,15 +5,32 @@ import { SharedModule } from '../modules/shared/shared.module';
   selector: 'app-header-nav',
   imports: [SharedModule],
   templateUrl: './header-nav.component.html',
-  styleUrl: './header-nav.component.scss'
+  styleUrl: './header-nav.component.scss',
 })
 export class HeaderNavComponent {
-  navItems = ['Home', 'About', 'Courses', 'Categories', 'Testimonials', 'Events', 'Contact']
+  navItems = [
+    'Home',
+    'About',
+    'Courses',
+    'Categories',
+    'Testimonials',
+    'Events',
+    'Contact',
+  ];
 
   scrollTo(item: any) {
-    let el = document.getElementById(item)
+    console.log(item);
+
+    let el = document.getElementById(item);
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  goToContact() {
+    let el = document.getElementById('Contact');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
 }

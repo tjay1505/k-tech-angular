@@ -1,4 +1,4 @@
-<div class="vw-100 border=0 d-flex flex-column align-items-center gap-3 py-4" id="upcomingEvent">
+<div id="Contact" class="vw-100 border=0 d-flex flex-column align-items-center gap-3 py-4">
   <div class="col-12 d-flex  align-items-center justify-content-center ">
     <button class="btn btn-bg-border font-color font-size">Contact & Location</button>
   </div>
@@ -15,7 +15,7 @@
       <div class="row g-5">
 
         <!-- Contact Info & Quick Actions -->
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-up">
           <!-- Company Card -->
           <div class="card shadow p-4 mb-4 ">
             <div class="d-flex align-items-center gap-3 mb-3">
@@ -60,13 +60,13 @@
               <div>
                 <h6 class="">Email</h6>
                 <a href="mailto:hello@kisstech.academy"
-                  class="text-decoration-none font-color">hellokisstech.academy</a>
+                  class="text-decoration-none font-color">hello&#64;kisstech.academy</a>
               </div>
             </div>
           </div>
 
           <!-- Office Hours -->
-          <div class="card shadow p-4 mb-4 ">
+          <div class="card shadow p-4 mb-4 " data-aos="fade-up">
             <div class="d-flex align-items-center gap-2 mb-3">
               <i class="far fa-clock font-color"></i>
               <h6 class=" mb-0">Office Hours</h6>
@@ -88,7 +88,7 @@
           </div>
 
           <!-- Quick Action Cards -->
-          <div class="d-grid gap-3">
+          <div class="d-grid gap-3" data-aos="fade-up">
             <a href="tel:+917806969730" class="card p-3 shadow text-decoration-none text-dark">
               <div class="d-flex align-items-center gap-3">
                 <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center"
@@ -104,7 +104,7 @@
             </a>
 
             <a href="https://maps.app.goo.gl/n7QYmE8SYVVt7KmJ7" target="_blank"
-              class="card p-3 shadow text-decoration-none text-dark">
+              class="card p-3 shadow text-decoration-none text-dark" data-aos="fade-up">
               <div class="d-flex align-items-center gap-3">
                 <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center"
                   style="width: 45px; height: 45px;">
@@ -118,11 +118,11 @@
               </div>
             </a>
 
-            <a href="#contact-form" class="card p-3 shadow text-decoration-none text-dark">
+            <a href="tel:+917806969730" class="card p-3 shadow text-decoration-none text-dark">
               <div class="d-flex align-items-center gap-3">
-                <div class="bg-purple text-white rounded-circle d-flex align-items-center justify-content-center"
+                <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center"
                   style="width: 45px; height: 45px;">
-                  <i class="fas fa-location-arrow"></i>
+                  <i class="fas fa-message"></i>
 
                   <!-- <i class="fa-solid fa-message"></i> -->
                 </div>
@@ -137,7 +137,7 @@
         </div>
 
         <!-- Contact Form & Map -->
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-up">
           <div class="card shadow p-4 mb-4" id="contact-form">
             <div class="d-flex align-items-center gap-2 mb-3">
               <i class="fas fa-users text-primary"></i>
@@ -146,24 +146,24 @@
             <form>
               <div class="row g-3">
                 <div class="col-md-6">
-                  <label class="form-label">First Name *</label>
-                  <input type="text" class="form-control" placeholder="Enter your first name">
+                  <label class="form-label ">First Name *</label>
+                  <input type="text" class="form-control font-size" placeholder="Enter your first name">
                 </div>
                 <div class="col-md-6">
                   <label class="form-label">Last Name *</label>
-                  <input type="text" class="form-control" placeholder="Enter your last name">
+                  <input type="text" class="form-control font-size" placeholder="Enter your last name">
                 </div>
                 <div class="col-12">
                   <label class="form-label">Email *</label>
-                  <input type="email" class="form-control" placeholder="Enter your email">
+                  <input type="email" class="form-control font-size" placeholder="Enter your email">
                 </div>
                 <div class="col-12">
                   <label class="form-label">Phone Number *</label>
-                  <input type="tel" class="form-control" placeholder="Enter your phone number">
+                  <input type="tel" class="form-control font-size" placeholder="Enter your phone number">
                 </div>
                 <div class="col-12">
                   <label class="form-label">Course Interest</label>
-                  <select class="form-select">
+                  <select class="form-select font-size">
                     <option value="">Select a course</option>
                     <option value="uiux-frontend">UI/UX Design + Frontend</option>
                     <option value="digital-marketing">Digital Marketing</option>
@@ -176,11 +176,11 @@
                 </div>
                 <div class="col-12">
                   <label class="form-label">Message</label>
-                  <textarea class="form-control" rows="4"
+                  <textarea class="form-control font-size" rows="4"
                     placeholder="Tell us about your career goals and any specific questions..."></textarea>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn btn-primary w-100">
+                  <button type="submit" (click)="sendMessage()" class="btn btn-bg-main text-white w-100 font-size">
                     <i class="fas fa-paper-plane me-2"></i>Send Message
                   </button>
                 </div>
@@ -193,8 +193,8 @@
           </div>
 
           <!-- Google Map -->
-          <div class="card shadow overflow-hidden">
-            <div class="bg-primary text-white p-3 d-flex justify-content-between align-items-center">
+          <div class="card shadow overflow-hidden" data-aos="fade-up">
+            <div class="main-bg-dark text-white p-3 d-flex justify-content-between align-items-center">
               <span>Our Location</span>
               <a href="https://maps.app.goo.gl/n7QYmE8SYVVt7KmJ7" target="_blank" class="text-white">
                 <i class="fas fa-external-link-alt"></i>
@@ -216,7 +216,7 @@
 
 
 
-  <div
+  <div data-aos="fade-down"
     class="col-10 main-bg-dark mt-3 text-white text-center shadow py-4 px-2 gap-4 rounded-3 d-flex flex-column align-items-center justify-content-evenly font-size ">
     <p class="fs-5">Ready to Transform Your Career?</p>
     <p class="col-md-7 ">Join thousands of successful professionals who started their tech journey at Kisstech Academy.
@@ -227,7 +227,10 @@
     </p>
     <div class="col-12 d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 ">
       <!-- <input type="text" class=" text-white col-10 col-md-3 btn border-white font-size" placeholder="Enter Eamil"> -->
-      <button class="btn font-size font-color bg bg-white col-10 col-md-2 giveAClr  ">Call Now: +91 7806969730</button>
+      <a href="tel:+917806969730" class="col-10 col-md-2"> <button
+          class="btn font-size font-color bg bg-white  giveAClr  ">Call
+          Now: +91 7806969730</button>
+      </a>
       <button class="btn font-size font-color bg bg-white col-10 col-md-2 giveAClr">Book Free Counseling</button>
     </div>
   </div>

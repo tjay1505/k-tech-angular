@@ -17,6 +17,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { HttpClientModule } from '@angular/common/http';
 
 const materialModules = [
   MatButtonModule,
@@ -32,22 +33,23 @@ const materialModules = [
   MatProgressSpinnerModule,
   MatTableModule,
   MatSortModule,
-  MatPaginatorModule
+  MatPaginatorModule,
 ];
-
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    ...materialModules
+    HttpClientModule,
+    ...materialModules,
   ],
   exports: [
+    HttpClientModule,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    ...materialModules
-  ]
+    ...materialModules,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}

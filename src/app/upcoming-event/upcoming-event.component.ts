@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SharedModule } from '../modules/shared/shared.module';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-upcoming-event',
@@ -8,6 +9,7 @@ import { SharedModule } from '../modules/shared/shared.module';
   styleUrl: './upcoming-event.component.scss',
 })
 export class UpcomingEventComponent {
+  constructor(private snack: MatSnackBar) {}
   upComeEvent = [
     {
       id: 1,
@@ -107,4 +109,32 @@ export class UpcomingEventComponent {
       t5: 'Speaker: Rahul Sharma',
     },
   ];
+
+  showMessage() {
+    this.snack.open('Reminder Sets', 'Close', {
+      duration: 3000,
+      panelClass: ['custom-snackbar'],
+      horizontalPosition: 'right',
+      verticalPosition: 'bottom',
+    });
+  }
+
+  goto() {
+    let el = document.getElementById('Contact');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  mail: any;
+  mailMessage() {
+    console.log(this.mail);
+
+    this.snack.open(`Will be contact soon to ${this.mail}`, 'Close', {
+      duration: 3000,
+      panelClass: ['custom-snackbar'],
+      horizontalPosition: 'right',
+      verticalPosition: 'bottom',
+    });
+  }
 }

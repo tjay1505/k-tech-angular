@@ -71,3 +71,10 @@ body {
 .giveAClr:hover {
   color: var(--main-color);
 }
+
+.custom-snackbar {
+  background-color: #ff2af8; /* green */
+  color: white;
+  font-weight: bold;
+  z-index: 1999;
+}

@@ -1,9 +1,9 @@
-<div class="text-center my-2 border col-12">
+<div id="Testimonials" data-aos="fade-up" class="text-center my-2  col-12">
   <span class="badge btn-bg-border font-color px-3 py-2 mb-3">Success Stories</span>
   <h2 class="fw-bold text-dark display-5">
     What Our <span class="font-color">Alumni Say</span>
   </h2>
-  <p class="">
+  <p class="d-none d-md-block">
     Real stories from real students who transformed their careers with Kisstech Academy.
     Join thousands of successful professionals who started their journey here.
   </p>
@@ -11,7 +11,7 @@
 
 
 <section id="testimonials" class="py-0 bg-white">
-  <div class="container">
+  <div class="container col-md-10 ">
 
 
     <p-carousel [value]="testimonials" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000"
@@ -65,12 +65,16 @@
 
     <!-- CTA Section -->
     <div class="text-center mt-5 p-5 rounded bg-light col-12 border">
-      <h3 class="fw-light text-dark mb-3">Ready to Write Your Success Story?</h3>
-      <p class="text-muted font-size mb-4">Join our community of successful professionals and transform your career
+      <h3 class="fw-light text-dark mb-3 d-none d-md-block">Ready to Write Your Success Story?</h3>
+      <p class="text-muted font-size mb-4 d-none d-md-block">Join our community of successful professionals and
+        transform your career
         today.</p>
       <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
-        <span class="badge btn-bg-main rounded-5 text-white px-4 py-2">✨ Free Career Counseling Available</span>
-        <span class="badge rounded-5 btn-bg-border font-color  px-4 py-2">📞 1:1 Mentorship Included</span>
+        <a href=""> <span class="badge btn-bg-main rounded-5 text-white px-4 py-2">✨ Free Career Counseling
+            Available</span>
+        </a>
+        <a href="tel:+917806969730"><span class="badge rounded-5 btn-bg-border font-color  px-4 py-2">📞 1:1 Mentorship
+            Included</span></a>
       </div>
     </div>
   </div>
