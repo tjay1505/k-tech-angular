@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/K-Tech',
+  basePath: '/ktech',
   supportedLocales: {
   "en-US": ""
 },
