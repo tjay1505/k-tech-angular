@@ -12,7 +12,8 @@
 ::ng-deep .custom-carousel .p-carousel-item {
   padding: 1rem;
   // height: 100%;
-  width: 40%;
+  // width: 40%;
+  width: 100%;
 }
 
 ::ng-deep .p-carousel-item {
@@ -20,7 +21,7 @@
   justify-content: center;
 }
 
-::ng-deep .p-carousel-item > * {
+::ng-deep .p-carousel-item>* {
   width: 100%;
   // max-width: 100%;
 }
@@ -32,16 +33,30 @@
 //   }
 // }
 @media (max-width: 425px) {
-  ::ng-deep .p-carousel-item > * {
+  ::ng-deep .p-carousel-item>* {
     width: 40%;
     // max-width: 100%;
+  }
+
+  ::ng-deep .custom-carousel .p-carousel-item {
+    padding: 1rem;
+    // height: 100%;
+    width: 40%;
+    // width: 100%;
   }
 }
 
 @media (max-width: 320px) {
-  ::ng-deep .p-carousel-item > * {
+  ::ng-deep .p-carousel-item>* {
     width: 35%;
     // max-width: 100%;
+  }
+
+  ::ng-deep .custom-carousel .p-carousel-item {
+    padding: 1rem;
+    // height: 100%;
+    width: 35%;
+    // width: 100%;
   }
 }
 

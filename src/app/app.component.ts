@@ -13,13 +13,13 @@ import { isPlatformBrowser } from '@angular/common';
 export class AppComponent implements OnInit {
   title = '';
 
-  constructor(@Inject(PLATFORM_ID) private platformId: object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: object) { }
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       AOS.init({
-        duration: 1000,
-        easing: 'ease-in-out',
+        duration: 600,
+        easing: 'ease-in-sine',
         once: false,
       });
     }
