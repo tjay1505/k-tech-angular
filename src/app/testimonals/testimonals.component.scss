@@ -7,59 +7,38 @@
   background: linear-gradient(to bottom left, #3b82f6, #06b6d4);
 }
 
-/* Add others based on 'color' values if needed */
-
-::ng-deep .custom-carousel .p-carousel-item {
-  padding: 1rem;
-  // height: 100%;
-  // width: 40%;
-  width: 100%;
-}
-
-::ng-deep .p-carousel-item {
-  display: flex;
-  justify-content: center;
-}
-
-::ng-deep .p-carousel-item>* {
-  width: 100%;
-  // max-width: 100%;
-}
-
-// @media (max-width: 432px) {
-//   ::ng-deep .p-carousel-item > * {
-//     width: 30%;
-//     // max-width: 100%;
-//   }
-// }
-@media (max-width: 425px) {
-  ::ng-deep .p-carousel-item>* {
-    width: 40%;
-    // max-width: 100%;
-  }
-
-  ::ng-deep .custom-carousel .p-carousel-item {
-    padding: 1rem;
-    // height: 100%;
-    width: 40%;
-    // width: 100%;
-  }
-}
-
-@media (max-width: 320px) {
-  ::ng-deep .p-carousel-item>* {
-    width: 35%;
-    // max-width: 100%;
-  }
-
-  ::ng-deep .custom-carousel .p-carousel-item {
-    padding: 1rem;
-    // height: 100%;
-    width: 35%;
-    // width: 100%;
-  }
-}
-
 p {
   margin-bottom: 0;
+}
+
+/* Make each carousel item fit the viewport */
+::ng-deep .p-carousel-item > * {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.warper-div {
+  width: 88vw;
+}
+
+/* Large-ish screens but smaller than desktop max */
+@media (max-width: 1476px) and (min-width: 768px) {
+  .warper-div {
+    width: 88vw;
+  }
+  ::ng-deep .p-carousel-item > * {
+    width: 80%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .warper-div {
+    width: 90vw;
+  }
+  ::ng-deep .p-carousel-item > * {
+    width: 100%;
+    max-width: 100%;
+  }
 }

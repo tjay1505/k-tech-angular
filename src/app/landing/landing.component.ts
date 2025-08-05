@@ -5,8 +5,15 @@ import { SharedModule } from '../modules/shared/shared.module';
   selector: 'app-landing',
   imports: [SharedModule],
   templateUrl: './landing.component.html',
-  styleUrl: './landing.component.scss'
+  styleUrl: './landing.component.scss',
 })
 export class LandingComponent {
+  scrollTo(item: any) {
+    console.log(item);
 
+    let el = document.getElementById(item);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }

@@ -9,10 +9,10 @@
       insights from industry experts through our exclusive webinar series.</p>
   </div>
 
-  <div class="col-12 d-flex flex-column flex-md-row gap-3 gap-md-0 align-items-center justify-content-evenly">
+  <div class="col-12 d-flex flex-column flex-md-row gap-3 gap-md-0  align-items-center justify-content-evenly">
     <div data-aos="fade-up"
-      class="col-md-3 col-11 shadow d-flex flex-column  rounded-3  align-items-center justify-content-evenly "
-      [ngStyle]="{'border-top': '5px solid ' + item.borderClr}" style="height: 60vh;" *ngFor="let item of upComeEvent">
+      class="col-md-3 col-11 gap-2  py-1 shadow d-flex flex-column  rounded-3  align-items-center justify-content-evenly "
+      [ngStyle]="{'border-top': '5px solid ' + item.borderClr}" style="height: 70vh;" *ngFor="let item of upComeEvent">
       <div class="col-11 d-flex gap-2 flex-column">
         <p class="fw-bold fs-5">{{item.tittle}}</p>
         <p class="font-color">{{item.subtitle}}</p>
@@ -52,7 +52,7 @@
   </div>
 
   <div
-    class="col-10 bg-light mt-3 shadow py-4 px-2 gap-4 rounded-3 d-flex flex-column align-items-center justify-content-evenly">
+    class="col-12 col-md-10 bg-light mt-3 shadow py-4 px-2 gap-4 rounded-3 d-flex flex-column align-items-center justify-content-evenly">
     <div class="col-11 d-flex align-items-center justify-content-between">
       <div class="">
         <p class="fw-bold fs-6">Upcoming Free Webinars</p>
@@ -83,7 +83,7 @@
     <p class="fs-5">Never Miss an Event</p>
     <p>Subscribe to our newsletter and get notified about upcoming bootcamps, webinars, and exclusive content.</p>
     <div class="col-12 d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 ">
-      <input type="email" [(ngModel)]="mail" class="text-white col-10 col-md-3 btn border-white font-size"
+      <input type="email" [(ngModel)]="mail" class="text-white inputNever col-10 col-md-3 btn border-white font-size"
         placeholder="Enter Eamil">
       <button class="btn font-size font-color bg bg-white col-10 col-md-1" (click)="mailMessage()">Subscribe</button>
     </div>
