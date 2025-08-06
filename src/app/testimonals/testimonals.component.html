@@ -12,14 +12,14 @@
 
 <section id="testimonials" class="py-0 bg-white">
   <!-- <div class="container col-5  col-md-10 border "> -->
-  <div class="warper-div">
+  <div class="warper-div  ">
 
 
     <p-carousel [value]="testimonials" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000"
       styleClass="custom-carousel" [responsiveOptions]="responsiveOptions" class=" border-3 border-danger">
 
       <ng-template pTemplate="item" let-item>
-        <div class="card h-100    shadow-sm position-relative overflow-hidden">
+        <div class="card    shadow-sm position-relative overflow-hidden">
           <div class="position-absolute top-0 end-0 rounded-circle opacity-10"
             style="width: 100px; height: 100px; transform: translate(30%, -30%)"
             [ngStyle]="{'background-color': item.color}">
