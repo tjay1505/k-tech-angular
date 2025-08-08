@@ -1,46 +1,90 @@
-/* Optional gradients or theme styles */
-.bg-gradient-purple {
-  background: linear-gradient(to bottom left, #a855f7, #ec4899);
+/* Force carousel to never overflow screen width */
+::ng-deep .custom-carousel .p-carousel-items-container {
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
 }
 
-.bg-gradient-blue {
-  background: linear-gradient(to bottom left, #3b82f6, #06b6d4);
-}
-
-p {
-  margin-bottom: 0;
-}
-
-/* Make each carousel item fit the viewport */
-::ng-deep .p-carousel-item > * {
-  width: 100%;
+/* Carousel items */
+::ng-deep .custom-carousel .p-carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0.5rem;
+  height: auto !important;
+  flex: 0 0 auto;
   max-width: 100%;
   box-sizing: border-box;
 }
 
-.warper-div {
-  width: 88vw;
-  // height: 100vh;
-  // border: 1px solid red;
+/* Card container */
+.testimonial-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 320px; /* Prevent huge desktop cards */
+  width: 100%;
 }
 
-/* Large-ish screens but smaller than desktop max */
-@media (max-width: 1476px) and (min-width: 768px) {
-  .warper-div {
-    width: 88vw;
-  }
-  ::ng-deep .p-carousel-item > * {
-    width: 80%;
-  }
+/* Remove double border look */
+.testimonial-card,
+.testimonial-card .card-body {
+  border: none !important;
 }
 
-/* Mobile */
-@media (max-width: 767px) {
-  .warper-div {
-    width: 90vw;
+/* Icons and text */
+.quote-icon {
+  font-size: 1.5rem;
+  opacity: 0.25;
+  margin-bottom: 1rem;
+}
+
+.stars {
+  margin-bottom: 1rem;
+}
+
+.testimonial-text {
+  flex-grow: 1;
+  font-style: italic;
+  color: #6c757d;
+}
+
+.testimonial-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #e9ecef;
+  padding-top: 1rem;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+/* Mobile fixes */
+@media (max-width: 768px) {
+  ::ng-deep .custom-carousel .p-carousel-item {
+    padding: 0.25rem;
   }
-  ::ng-deep .p-carousel-item > * {
-    width: 100%;
-    max-width: 100%;
+  .testimonial-card {
+    padding: 1rem;
+    max-width: 90vw; /* Make card fit mobile width */
   }
 }

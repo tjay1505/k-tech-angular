@@ -96,7 +96,7 @@ export class TestimonalsComponent implements OnInit {
   responsiveOptions = [
     {
       breakpoint: '1024px',
-      numVisible: 3,
+      numVisible: 2,
       numScroll: 1,
     },
     {
