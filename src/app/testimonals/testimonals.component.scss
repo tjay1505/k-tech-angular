@@ -88,3 +88,7 @@
     max-width: 90vw; /* Make card fit mobile width */
   }
 }
+
+::ng-deep .p-carousel-item-cloned {
+  display: none !important;
+}
