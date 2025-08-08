@@ -2,8 +2,8 @@
   <!-- <div class="container col-5  col-md-10 border "> -->
   <div class="warper-div  ">
 
-    <p-carousel [value]="testimonials" [numVisible]="3" [numScroll]="1" [circular]="true" [autoplayInterval]="3000"
-      styleClass="custom-carousel">
+    <p-carousel *ngIf="false" [value]="testimonials" [numVisible]="3" [numScroll]="1" [circular]="true"
+      [autoplayInterval]="3000" styleClass="custom-carousel">
 
       <ng-template pTemplate="item" let-item>
         <div class="testimonial-card">
