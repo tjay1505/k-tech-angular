@@ -135,7 +135,8 @@ export class CampusContactComponent {
     console.log(formData); // Debug log
 
     this.http
-      .post('https://node-mail-sender-three.vercel.app/send-mail', formData)
+      //.post('https://node-mail-sender-three.vercel.app/send-mail', formData)
+      .post('https://nodemailsender-eta.vercel.app/send-mail', formData)
       .subscribe({
         next: (res) => {
           console.log('Email sent:', res);
